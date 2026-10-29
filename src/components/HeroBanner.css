@@ -1,0 +1,106 @@
+.hero-banner {
+  flex: 1;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 56px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 540px;
+  z-index: 2;
+}
+
+/* Badge de temporada en dorado/amarillo */
+.hero-season-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #facc15;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.hero-season-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #facc15;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.6);
+}
+
+/* Título principal tipografía robusta */
+.hero-title {
+  font-size: clamp(2rem, 3.2vw, 3.4rem);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0 0 28px 0;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/* Descripción */
+.hero-description {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #cbd5e1;
+  margin: 0;
+  text-align: left;
+  font-weight: 400;
+}
+
+/* Pie con divisor de categorías */
+.hero-footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+  z-index: 2;
+}
+
+.hero-categories-label {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.hero-categories-list {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+/* Responsividad */
+@media (max-width: 900px) {
+  .hero-banner {
+    min-height: auto;
+    padding: 40px 24px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+}

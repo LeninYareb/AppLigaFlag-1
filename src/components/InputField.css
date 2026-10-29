@@ -1,0 +1,86 @@
+.input-field-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.input-field-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #475569;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input-field-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-field-control {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: #0f172a;
+  background-color: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.input-field-control::placeholder {
+  color: #94a3b8;
+  font-size: 0.92rem;
+}
+
+.input-field-control:hover {
+  border-color: #94a3b8;
+}
+
+.input-field-control:focus {
+  border-color: #1e1b4b;
+  box-shadow: 0 0 0 3px rgba(30, 27, 75, 0.15);
+}
+
+.input-password-toggle {
+  position: absolute;
+  right: 12px;
+  background: transparent;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.15s ease;
+}
+
+.input-password-toggle:hover {
+  color: #1e1b4b;
+}
+
+.has-error .input-field-control {
+  border-color: #ef4444;
+}
+
+.has-error .input-field-control:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+.input-field-error-msg {
+  font-size: 0.78rem;
+  color: #ef4444;
+  margin-top: 5px;
+  font-weight: 500;
+}
